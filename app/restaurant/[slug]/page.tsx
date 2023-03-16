@@ -1,50 +1,27 @@
 import Link from 'next/link'
 
+import Navbar from '../../components/Navbar'
+import Header from './components/Header'
+import RestaurantNavbar from './components/RestaurantNavbar'
+
 type Props = {}
 
 export default function RestaurantDetails({}: Props) {
   return (
     <main className='bg-gray-100 min-h-screen w-screen'>
       <main className='max-w-screen-2xl m-auto bg-white'>
-        {/* NAVBAR */}
-        <nav className='bg-white p-2 flex justify-between'>
-          <Link href='/' className='font-bold text-gray-700 text-2xl'>
-            OpenTable
-          </Link>
-          <div>
-            <div className='flex'>
-              <button className='bg-blue-400 text-white border p-1 px-4 rounded mr-3'>
-                Sign in
-              </button>
-              <button className='border p-1 px-4 rounded'>Sign up</button>
-            </div>
-          </div>
-        </nav>
-        {/* NAVBAR */} {/* HEADER */}
-        <div className='h-96 overflow-hidden'>
-          <div className='bg-center bg-gradient-to-r from-[#0f1f47] to-[#5f6984] h-full flex justify-center items-center'>
-            <h1 className='text-7xl text-white captitalize text-shadow text-center'>
-              Milestones Grill (Toronto)
-            </h1>
-          </div>
-        </div>
-        {/* HEADER */} {/* DESCRIPTION PORTION */}
+        <Navbar />
+        <Header />
+        {/* DESCRIPTION PORTION */}
         <div className='flex m-auto w-2/3 justify-between items-start 0 -mt-11'>
           <div className='bg-white w-[70%] rounded p-3 shadow'>
-            {/* RESAURANT NAVBAR */}
-            <nav className='flex text-reg border-b pb-2'>
-              <Link href='/restaurant/milestones-grill' className='mr-7'>
-                Overview
-              </Link>
-              <Link href='/restaurant/milestones-grill/menu' className='mr-7'>
-                Menu
-              </Link>
-            </nav>
-            {/* RESAURANT NAVBAR */} {/* TITLE */}
+            <RestaurantNavbar />
+            {/* TITLE */}
             <div className='mt-4 border-b pb-6'>
               <h1 className='font-bold text-6xl'>Milesstone Grill</h1>
             </div>
-            {/* TITLE */} {/* RATING */}
+            {/* TITLE */}
+            {/* RATING */}
             <div className='flex items-end'>
               <div className='ratings mt-2 flex items-center'>
                 <p>*****</p>
@@ -54,7 +31,8 @@ export default function RestaurantDetails({}: Props) {
                 <p className='text-reg ml-4'>600 Reviews</p>
               </div>
             </div>
-            {/* RATING */} {/* DESCRIPTION */}
+            {/* RATING */}
+            {/* DESCRIPTION */}
             <div className='mt-4'>
               <p className='text-lg font-light'>
                 The classics you love prepared with a perfect twist, all served
@@ -65,7 +43,8 @@ export default function RestaurantDetails({}: Props) {
                 memorable one.
               </p>
             </div>
-            {/* DESCRIPTION */} {/* IMAGES */}
+            {/* DESCRIPTION */}
+            {/* IMAGES */}
             <div>
               <h1 className='font-bold text-3xl mt-10 mb-7 border-b pb-5'>
                 5 photos
@@ -98,7 +77,8 @@ export default function RestaurantDetails({}: Props) {
                 />
               </div>
             </div>
-            {/* IMAGES */} {/* REVIEWS */}
+            {/* IMAGES */}
+            {/* REVIEWS */}
             <div>
               <h1 className='font-bold text-3xl mt-10 mb-7 borber-b pb-5'>
                 What 100 people are saying
@@ -169,9 +149,9 @@ export default function RestaurantDetails({}: Props) {
             </div>
           </div>
         </div>
-        {/* DESCRIPTION PORTION */} {/* RESERVATION CARD PORTION */}{' '}
-        {/* RESERVATION
-    CARD PORTION */}
+        {/* DESCRIPTION PORTION */}
+        {/* RESERVATION CARD PORTION */}
+        {/* RESERVATION CARD PORTION */}
       </main>
     </main>
   )
