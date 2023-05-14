@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { PrismaClient } from '@prisma/client'
 
 import Description from './components/Description'

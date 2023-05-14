@@ -34,8 +34,6 @@ const fetchRestaurants = async (): Promise<RestaurantCardType[]> => {
 export default async function Home({}: RestaurantCardType) {
   const restaurants = await fetchRestaurants()
 
-  console.log(restaurants[0])
-
   return (
     <main>
       <Header />
