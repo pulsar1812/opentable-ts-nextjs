@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Cuisine, PRICE, Location } from '@prisma/client'
+import Price from '../../components/Price'
 
 interface Restaurant {
   id: number
@@ -29,7 +30,7 @@ export default function RestaurantCard({
         </div>
         <div className='mb-9'>
           <div className='font-light flex text-reg'>
-            <p className='mr-4'>{price}</p>
+            <Price price={price} />
             <p className='mr-4'>{cuisine.name}</p>
             <p className='mr-4'>{location.name}</p>
           </div>
