@@ -31,8 +31,8 @@ export default function RestaurantCard({
         <div className='mb-9'>
           <div className='font-light flex text-reg'>
             <Price price={price} />
-            <p className='mr-4'>{cuisine.name}</p>
-            <p className='mr-4'>{location.name}</p>
+            <p className='mr-4 capitalize'>{cuisine.name}</p>
+            <p className='mr-4 capitalize'>{location.name}</p>
           </div>
         </div>
         <div className='text-red-600'>
