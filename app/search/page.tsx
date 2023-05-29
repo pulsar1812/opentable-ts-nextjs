@@ -5,7 +5,7 @@ import SearchSidebar from './components/SearchSidebar'
 
 const prisma = new PrismaClient()
 
-interface SearchParams {
+export interface SearchParams {
   city?: string
   cuisine?: string
   price?: PRICE
@@ -76,7 +76,11 @@ export default async function Search({
     <>
       <SearchHeader />
       <div className='flex py-4 m-auto w-2/3 justify-between items-start'>
-        <SearchSidebar locations={locations} cuisines={cuisines} />
+        <SearchSidebar
+          locations={locations}
+          cuisines={cuisines}
+          searchParams={searchParams}
+        />
         <div className='w-5/6'>
           {restaurants.length ? (
             <>
